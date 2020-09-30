@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Площадь фигуры</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="figureChoise">
+			<p class="choise">Выберите фигуру</p>
+			<div class="figureList">
+				<p class="figureItem">Треугольник</p>
+				<p class="figureItem">Круг</p>
+			</div>
+		</div>
+
+		<div class='size-item triangle'>
+			<p class='size-description'>Размеры:</p>
+			<label for="" class="size">
+				Сторона A 
+				<input type="number" min=0 name="" id="sizeA" onchange=changeTriangle()> м
+			</label> <br>
+			<label for="" class="size">
+				Сторона B 
+				<input type="number" min=0 name="" id="sizeB" onchange=changeTriangle()> м
+			</label> <br>
+			<label for="" class="size">
+				Сторона C 
+				<input type="number" min=0 name="" id="sizeC" onchange=changeTriangle()> м
+			</label> <br>
+			<button class="calculate">Площадь:</button>
+		</div>
+
+		<div class='size-item'>
+			<p class='size-description'>Размеры:</p>
+			<label for="" class="size">
+				Радиус 
+				<input type="number" min=0 id="circle" onchange=changeCircle()> м
+			</label> <br>
+			<button class="calculate">Площадь:</button>
+		</div>
+
+		<div class="result">
+			<p class="resultText"></p>
+			<a class="resultLink" href="https://github.com/Rommah/area" target="blank">Файл со скриптом</a>
+
+		</div>
+
+	</div>
+
+
+	<script src="area.js"></script>
+	
+</body>
+</html>

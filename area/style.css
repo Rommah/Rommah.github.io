@@ -1,0 +1,83 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.figureChoise {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	margin-right: 1.4em;
+	line-height: 30px;
+	min-width: 10em;
+	padding-left: 0.8em;
+}
+.figureChoise:after{
+	content: '';
+	border: 0.5em solid transparent;
+	border-top-color: #000;
+	margin-left: 0.5em;
+	position: relative;
+	top: 6px;
+}
+.choise {
+	font-size: 22px;
+
+}
+.choise:hover {
+	color: red;
+}
+.figureList {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	min-width: 10em;
+	top: 100%;
+
+	display: none;
+}
+
+.figureItem {
+	background-color: #eee;
+	border-bottom: 1px solid blue;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+.size-item {
+	width: 12em;
+	display: none;
+}
+.size-description {
+	text-align: center;
+}
+.size {
+	width: 150px;
+	margin: 0 5px;
+	text-align: center;
+}
+.size input {
+	width: 3em;
+}
+.calculate {
+	width: 100%;
+	margin: 15px auto;
+}
+.result {
+	font-size: 22px;
+	text-align: center;
+	width: 8.5em;
+
+	display: none;
+}
+.resultText {
+	margin-top: 0;
+}
+.resultLink {
+	font-size: 14px;
+}
+
+.show {
+	display: block;
+}
